@@ -1,5 +1,6 @@
 Dado(/^que eu estou na página de cadastro do Groupon$/) do
   visit "http://sdn.tucano.net.br/wp-login.php"
+  #sleep 10
 end
 
 Quando(/^eu preencher os campos obrigatórios$/) do
