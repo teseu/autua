@@ -2,3 +2,18 @@ https://www.youtube.com/watch?v=6qX7iT9Z9Vc&t=50s
 https://github.com/thiagomarquessp/capybara_for_all_p3
 https://github.com/thiagomarquessp/capybara_for_all_p3/blob/master/cucumber/features/step_definitions/cadastro_groupon.rb
 https://github.com/thiagomarquessp/capybara_for_all_p3/blob/master/cucumber/features/support/page_objects.rb
+
+gerenciador de versões ruby em ambiente linux
+rvm e rbenv
+
+
+comandos
+bundle install #instala os definidos no arquivo gemfile
+rvm list #listar todas as versões do ruby disponíveis
+rvm use 2.2.2 #usar uma versão
+rvm use 2.2.2 --default #usar e trocar o padrão
+
+gem install cucumber
+gem install selenium-webdriver
+gem install bundler
+cucumber --init #inicia projeto
