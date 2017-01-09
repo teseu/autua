@@ -2,12 +2,23 @@ https://www.youtube.com/watch?v=6qX7iT9Z9Vc&t=50s
 https://github.com/thiagomarquessp/capybara_for_all_p3
 https://github.com/thiagomarquessp/capybara_for_all_p3/blob/master/cucumber/features/step_definitions/cadastro_groupon.rb
 https://github.com/thiagomarquessp/capybara_for_all_p3/blob/master/cucumber/features/support/page_objects.rb
+http://stackoverflow.com/questions/8307653/cucumber-xpath-selector
 
-gerenciador de versões ruby em ambiente linux
+===gerenciador de versões ruby em ambiente linux
 rvm e rbenv
 
+===feature
+1a linha
+#language: pt #default ou vazio - en
+Funcionalidade e cenário - obrigatórios
 
-comandos
+===step_definitions (.rb)
+executar cucumber, copia saída para o rb (saída mostra falta implementar)
+executa novamente (mostra pendências)
+
+
+
+===comandos
 bundle install #instala os definidos no arquivo gemfile
 rvm list #listar todas as versões do ruby disponíveis
 rvm use 2.2.2 #usar uma versão
@@ -17,3 +28,13 @@ gem install cucumber
 gem install selenium-webdriver
 gem install bundler
 cucumber --init #inicia projeto
+
+===interação
+#visit "http://sdn.tucano.net.br/wp-login.php"
+#select 'Sr.', from: 'gender-select'
+find(:id, 'user_login').set("teseu")
+#find(:css, '#first-name-input').set("Nome") por id
+#find(:css, '.first-name-input').set("Nome") por classe
+find(:id, 'user_pass').set("uma$enh@1ncrivElmenteFort3!")
+find(:id, 'wp-submit').click()
+sleep 5
