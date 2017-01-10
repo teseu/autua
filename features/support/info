@@ -3,6 +3,8 @@ https://github.com/thiagomarquessp/capybara_for_all_p3
 https://github.com/thiagomarquessp/capybara_for_all_p3/blob/master/cucumber/features/step_definitions/cadastro_groupon.rb
 https://github.com/thiagomarquessp/capybara_for_all_p3/blob/master/cucumber/features/support/page_objects.rb
 http://stackoverflow.com/questions/8307653/cucumber-xpath-selector
+https://gist.github.com/zhengjia/428105 (cheat sheet)
+https://www.varvet.com/blog/simple-tricks-to-clean-up-your-capybara-tests/
 
 ===gerenciador de versões ruby em ambiente linux
 rvm e rbenv
@@ -38,3 +40,15 @@ find(:id, 'user_login').set("teseu")
 find(:id, 'user_pass').set("uma$enh@1ncrivElmenteFort3!")
 find(:id, 'wp-submit').click()
 sleep 5
+puts @num_comentarios_depois
+find('#my_element')['class']
+# => "first-class second-class"
+
+find('#my_input')['placeholder']
+# => "My placeholder value"
+
+find('a#example-link')['href']
+# => "http://example.com"
+
+find('#my_element')['missing_attribute']
+# => nil
