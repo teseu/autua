@@ -7,7 +7,8 @@ end
 
 Capybara.javascript_driver = :chrome
 
-Selenium::WebDriver::Chrome.driver_path = 'features/support/chromedriver/chromedriver.exe'
+#Selenium::WebDriver::Chrome.driver_path = 'features/support/chromedriver/chromedriver.exe'
+Selenium::WebDriver::Chrome.driver_path = 'features/support/chromedriver/chromedriver'
 
 Capybara.default_driver = :chrome
 Capybara.default_max_wait_time = 60
