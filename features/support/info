@@ -5,6 +5,8 @@ https://github.com/thiagomarquessp/capybara_for_all_p3/blob/master/cucumber/feat
 http://stackoverflow.com/questions/8307653/cucumber-xpath-selector
 https://gist.github.com/zhengjia/428105 (cheat sheet)
 https://www.varvet.com/blog/simple-tricks-to-clean-up-your-capybara-tests/
+https://blog.morizyun.com/posts/capybara-selenium-webdriver-ruby
+https://github.com/basti1302/audiobook-collection-manager-acceptance
 
 ===gerenciador de versões ruby em ambiente linux
 rvm e rbenv

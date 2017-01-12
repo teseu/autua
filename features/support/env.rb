@@ -12,3 +12,6 @@ Selenium::WebDriver::Chrome.driver_path = 'features/support/chromedriver/chromed
 
 Capybara.default_driver = :chrome
 Capybara.default_max_wait_time = 5
+
+#arquivo com dados de acesso
+$acesso = 'features/support/acesso'
