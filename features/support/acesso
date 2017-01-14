@@ -1,2 +1,6 @@
-teseu
-uma$enh@1ncrivElmenteFort3!
+seu-usuario
+aqui-vai-a-senha
+
+# Utilização
+Apenas as 2 primeiras linhas do arquivo são utilizadas, a 1ª vira o login e a 2ª a senha.
+O arquivo, se usado dessa forma e nesse mesmo local, torna possível usá-lo em diferentes máquinas e por diferentes pessoas, cada uma com seu próprio usuário, mas isso tb cria uma brecha de segurança, já que os commits exporiam a senha. A solução é simples, se usar o arquivo, antes de qq commit, inclua na lista do gitignore e nunca faça commit ou push com ele.
