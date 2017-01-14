@@ -3,7 +3,7 @@ $user = lines[0]
 $pass = lines[1]
 
 Dado(/^que estou na página de gestão de comentários$/) do
-  @url_login = "http://sdn.tucano.net.br/wp-login.php"
+  @url_login = "http://url.do-blog.wordpress/wp-login.php"
   Capybara.reset_sessions!
   visit (@url_login)
   fill_in('user_login', :with => $user)
@@ -11,7 +11,7 @@ Dado(/^que estou na página de gestão de comentários$/) do
 end
 
 Quando(/^eu selecionar o comentário$/) do
-  @url_comentario = 'http://sdn.tucano.net.br/wp-admin/edit-comments.php'
+  @url_comentario = 'http://url.do-blog.wordpress/wp-admin/edit-comments.php'
   visit (@url_comentario)
   #$num_comentarios_antes = page.first('span.pending-count').text
   $num_comentarios_antes = find(:xpath, '//*[@id="menu-comments"]/a/div[3]/span/span').text
