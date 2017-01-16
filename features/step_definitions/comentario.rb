@@ -13,17 +13,13 @@ end
 Quando(/^eu selecionar o comentário$/) do
   @url_comentario = 'http://url.do-blog.wordpress/wp-admin/edit-comments.php'
   visit (@url_comentario)
-  #$num_comentarios_antes = page.first('span.pending-count').text
   $num_comentarios_antes = find(:xpath, '//*[@id="menu-comments"]/a/div[3]/span/span').text
-
   find(:xpath, '//*[@id="the-comment-list"]/tr[1]/th/input').click
 end
 
 E(/^marcar como span$/) do
   select 'Marcar como spam', from: 'bulk-action-selector-top'
-  #find(:id, 'doaction').click
   click_button('doaction')
-  #sleep 1
 end
 
 Então(/^o comentáio deverá ser eliminado$/) do
